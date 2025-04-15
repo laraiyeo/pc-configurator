@@ -48,7 +48,7 @@ export default function BuildForm({ onSubmit, initialData = {} }) {
                 <input
                 type="text"
                 name="cpu"
-                value={formData.cpupu}
+                value={formData.cpu}
                 onChange={handleChange}
                 required
                 className="w-full border p-2"

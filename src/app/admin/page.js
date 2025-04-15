@@ -35,7 +35,7 @@ export default async function AdminPage() {
                             <td>{build.gpu}</td>
                             <td>${build.price}</td>
                             <td>
-                                <form action={deleteBuild.bind(null, build.id)}>
+                                <form action={() => deleteBuild.bind(build.id)}>
                                     <button className="text-red-500">D</button>
                                 </form>
                             </td>
