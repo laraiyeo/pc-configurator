@@ -1,16 +1,15 @@
 export default function BuildDetail({ build }) {
     return (
-      <div>
-        <h1 className="text-2xl font-bold mt-4 mb-2">{build.build_name}</h1>
-        <table className="table-auto border border-collapse mt-2">
+      <div className="p-4">
+        <h2 className="text-xl font-bold mb-2">{build.build_name}</h2>
+        <table className="border w-full text-left">
           <tbody>
-            <tr><td className="border px-4 py-2">ID</td><td className="border px-4 py-2">{build.id}</td></tr>
-            <tr><td className="border px-4 py-2">CPU</td><td className="border px-4 py-2">{build.cpu}</td></tr>
-            <tr><td className="border px-4 py-2">GPU</td><td className="border px-4 py-2">{build.gpu}</td></tr>
-            <tr><td className="border px-4 py-2">Price</td><td className="border px-4 py-2">${build.price}</td></tr>
+            <tr><td className="border px-2 py-1">ID</td><td className="border px-2 py-1">{build.id}</td></tr>
+            <tr><td className="border px-2 py-1">CPU</td><td className="border px-2 py-1">{build.cpu}</td></tr>
+            <tr><td className="border px-2 py-1">GPU</td><td className="border px-2 py-1">{build.gpu}</td></tr>
+            <tr><td className="border px-2 py-1">Price</td><td className="border px-2 py-1">${build.price}</td></tr>
           </tbody>
         </table>
       </div>
     );
   }
-  
