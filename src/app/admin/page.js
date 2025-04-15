@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { revalidatePath } from 'next/cache';
+import DeleteButton from '@/components/DeleteButton';
 
 async function getBuilds() {
     const res = await fetch('http://localhost:4000/builds', { cache: 'no-store' });
@@ -7,7 +8,7 @@ async function getBuilds() {
 }
 
 async function deleteBuild(id) {
-    'use server';
+    'use server'; // Mark as server-side function
     await fetch(`http://localhost:4000/builds/${id}`, { method: 'DELETE' });
     revalidatePath('/collection');
     revalidatePath(`/collection/${id}`);
@@ -18,9 +19,9 @@ export default async function AdminPage() {
     const builds = await getBuilds();
 
     return (
-        <div>
-            <Link href="/admin/create" className="text-green-500 underline"> Create New</Link>
-            <table className="table-auto border mt-4">
+        <div className="p-4">
+            <Link href="/admin/create" className="text-green-500 underline">Create New</Link>
+            <table className="table-auto border mt-4 w-full">
                 <thead>
                     <tr>
                         <th>ID</th><th>Name</th><th>CPU</th><th>GPU</th><th>Price</th><th>D</th><th>E</th>
@@ -35,9 +36,7 @@ export default async function AdminPage() {
                             <td>{build.gpu}</td>
                             <td>${build.price}</td>
                             <td>
-                                <form action={() => deleteBuild.bind(build.id)}>
-                                    <button className="text-red-500">D</button>
-                                </form>
+                                <DeleteButton buildId={build.id} onDelete={deleteBuild} />
                             </td>
                             <td>
                                 <Link className="text-blue-500" href={`/admin/edit/${build.id}`}>E</Link>

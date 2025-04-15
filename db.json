@@ -1,18 +1,32 @@
 {
-    "builds": [
-      {
-        "id": "1",
-        "build_name": "Gaming Beast",
-        "cpu": "Intel i9-13900K",
-        "gpu": "NVIDIA RTX 4090",
-        "price": 3499
-      },
-      {
-        "id": "2",
-        "build_name": "Budget Build",
-        "cpu": "AMD Ryzen 5 5600",
-        "gpu": "NVIDIA GTX 1660 Super",
-        "price": 799
-      }
-    ]
-  }
+  "builds": [
+    {
+      "id": "1",
+      "build_name": "Gaming Beast",
+      "cpu": "Intel i9-13900K",
+      "gpu": "NVIDIA RTX 4090",
+      "price": 3599
+    },
+    {
+      "id": "2",
+      "build_name": "Budget Gamer",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "NVIDIA GTX 1660",
+      "price": 899
+    },
+    {
+      "id": "3",
+      "build_name": "Current Setup",
+      "cpu": "Intel i5-13600KF",
+      "gpu": "NVIDIA RTX 4070 Ti",
+      "price": "2999"
+    },
+    {
+      "id": "4",
+      "build_name": "Old Setup",
+      "cpu": "Intel i5-11400F",
+      "gpu": "NVIDIA RTX 3060 Ti",
+      "price": "2299"
+    }
+  ]
+}
