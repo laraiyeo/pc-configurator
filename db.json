@@ -1,0 +1,19 @@
+{
+    "builds": [
+      {
+        "id": 1,
+        "build_name": "Gaming Beast",
+        "cpu": "Intel Core i9-13900K",
+        "gpu": "NVIDIA RTX 4090",
+        "price": 4200
+      },
+      {
+        "id": 2,
+        "build_name": "Budget Streamer",
+        "cpu": "AMD Ryzen 5 5600X",
+        "gpu": "AMD Radeon RX 6600",
+        "price": 1100
+      }
+    ]
+  }
+  
