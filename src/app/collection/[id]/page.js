@@ -22,7 +22,7 @@ export default async function BuildDetailPage({ params }) {
     return (
         <div>
             <Link href="/collection" className="text-blue-500 underline">Back</Link>
-            <h1 className="text-2x1 font-bold mt-4 mb-2">{build.build_name}</h1>
+            <h1 className="text-2xl font-bold mt-4 mb-2">{build.build_name}</h1>
             <table className="table-auto border border-collapse mt-2">
                 <tbody>
                     <tr><td className="border px-4 py-2">ID</td><td className="border px-4 py-2">{build.id}</td></tr>

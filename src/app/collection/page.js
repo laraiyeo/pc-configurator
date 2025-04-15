@@ -10,7 +10,7 @@ export default async function CollectionPage() {
 
     return (
         <div>
-            <h1 className="text-2x1 font-bold mb-4">PC Builds Collection</h1>
+            <h1 className="text-2xl font-bold mb-4">PC Builds Collection</h1>
             <u1 className="space-y-3">
                 {builds.map(build => (
                     <li key={builds.id} className="p-4 border rounded shadow">
