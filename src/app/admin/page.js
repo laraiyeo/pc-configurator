@@ -1,4 +1,4 @@
-import Link from 'nex/link';
+import Link from 'next/link';
 import { revalidatePath } from 'next/cache';
 
 async function getBuilds() {
