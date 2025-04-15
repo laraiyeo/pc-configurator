@@ -20,7 +20,7 @@ export default function BuildForm({ onSubmit, initialData = {} }) {
     };
 
     return (
-        <form onSubmit={handleSubmit} classNmae="space-y-4 p-4 bg-white shadow-md rounded-md">
+        <form onSubmit={handleSubmit} className="space-y-4 p-4 bg-white shadow-md rounded-md">
             <div>
                 <label>ID:</label>
                 <input
